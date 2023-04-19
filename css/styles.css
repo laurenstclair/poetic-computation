@@ -1,3 +1,5 @@
+/* Column Layout*/
+
 * {
   box-sizing: border-box;
 }
@@ -14,4 +16,8 @@
   content: "";
   display: table;
   clear: both;
+}
+
+img {
+  width: 90%;
 }
