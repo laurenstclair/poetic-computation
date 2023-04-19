@@ -4,12 +4,12 @@ var words = [
   "iterative",
   "network",
   "protocol",
-  "hope",
   "biome",
   "tapestry",
   "peer-to-peer",
   "foliage",
   "woven",
+  "hope",
   "forest",
   "communal",
   "transmutation",
@@ -54,5 +54,13 @@ for (var i = 0; i < words.length; i++) {
   selectElement.appendChild(optionElement);
 
   var displayWords = (document.getElementById("list").innerHTML +=
-    "<p>" + words[i] + "</br></p>");
+    "<p><span onclick='setSelectValue(\"" +
+    words[i] +
+    "\")'>" +
+    words[i] +
+    "</span></p>");
+}
+
+function setSelectValue(value) {
+  selectElement.value = value;
 }
