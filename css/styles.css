@@ -1,3 +1,11 @@
+body {
+  font-family: "PT Sans", Calibri, Tahoma, sans-serif;
+}
+
+img {
+  width: 90%;
+}
+
 /* Column Layout*/
 
 * {
@@ -18,6 +26,42 @@
   clear: both;
 }
 
-img {
-  width: 90%;
+.right-align {
+  text-align: right;
+  align-items: right;
+}
+
+.center-align {
+  text-align: center;
+  align-items: center;
+}
+
+.behind {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  color: lightblue;
+}
+
+.front {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+}
+
+#secondary {
+  text-align: right;
+  align-items: right;
+  position: absolute;
+  bottom: 10px;
+}
+
+#list span:hover {
+  background-color: yellow;
+}
+
+#list span.selected {
+  background-color: lightblue;
 }
