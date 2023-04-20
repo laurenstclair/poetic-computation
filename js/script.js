@@ -6,6 +6,7 @@ var words = [
   "network",
   "protocol",
   "tapestry",
+  "murmuration",
   "peer-to-peer",
   "foliage",
   "woven",
@@ -20,7 +21,6 @@ var words = [
   "programmatic",
   "fungal",
   "cocoon",
-  "murmuration",
   "assembly",
   "connective",
   "wish",
@@ -44,8 +44,6 @@ var words = [
   "pedagogy",
   "space",
 ];
-
-var behind = ["cc81a8", "e6707c", "97a993", "e4bf4c", "0070aa"];
 
 var selectElement = document.getElementById("words");
 
@@ -90,3 +88,36 @@ var secondaryHeading =
   "<h1>Poetic computation is a mycelial-spun cocoon</h1>";
 document.getElementById("heading").innerHTML =
   displayHeading + secondaryHeading;
+
+document.querySelector("form").addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  let inputText = document.getElementById("words").value;
+
+  document.getElementById("output").innerText = inputText;
+});
+
+let definition = [];
+
+document.querySelector("form").addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  let inputText = document.getElementById("words").value;
+  definition.push(inputText);
+
+  let outputText = "";
+  for (let i = 0; i < definition.length; i++) {
+    outputText += definition[i] + "<br>";
+  }
+
+  document.getElementById("output").innerHTML = outputText;
+  document.getElementById("array").innerHTML = "[" + definition + "]";
+  document.getElementById("words").value = "";
+
+  if (definition.includes("murmuration")) {
+    document.getElementById("image").innerHTML =
+      "<img src='images/5196832414_d7db72206b_o.jpg'>";
+  } else {
+    document.getElementById("image").innerHTML = "";
+  }
+});

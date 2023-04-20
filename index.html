@@ -11,38 +11,17 @@
     <div id="heading" class="behind"></div>
     <div class="row">
       <div class="column center-align">
-        <label for="words">Poetic computation is </label>
-        <input type="text" id="definition" /><br /><br />
-        <select id="words"></select>
+        <form>
+          <label for="words">Poetic computation is</label>
+          <input type="text" id="words" />
+          <button type="submit">&#10011;</button>
+        </form>
+        <div id="output"></div>
       </div>
       <div class="column center-align">
         <div id="secondary" class="behind"></div>
-        <figure>
-          <img src="images/5196832414_d7db72206b_o.jpg" />
-          <figcaption>
-            <p class="attribution">
-              "<a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.flickr.com/photos/35044553@N02/5196832414"
-                >A murmuration of starlings (4)</a
-              >" by
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.flickr.com/photos/35044553@N02"
-                >ad551</a
-              >
-              is licensed under
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://creativecommons.org/licenses/by/2.0/?ref=openverse"
-                >CC BY 2.0</a
-              >
-            </p>
-          </figcaption>
-        </figure>
+        <figure id="image"></figure>
+        <div id="array"></div>
       </div>
       <div class="column right-align" id="list"></div>
     </div>
