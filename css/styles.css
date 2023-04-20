@@ -1,9 +1,21 @@
 body {
   font-family: "PT Sans", Calibri, Tahoma, sans-serif;
+  color: white;
+  background-color: cornflowerblue;
+}
+
+h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 img {
   width: 90%;
+}
+
+form {
+  padding: 20px;
+  background-color: rgb(14, 52, 119, 0.5);
 }
 
 /* Column Layout*/
@@ -41,7 +53,7 @@ img {
   left: 0px;
   top: 0px;
   z-index: -1;
-  color: lightblue;
+  color: rgb(163, 200, 217, 0.5);
 }
 
 .front {
@@ -59,9 +71,13 @@ img {
 }
 
 #list span:hover {
-  background-color: yellow;
+  background-color: #7764ed;
 }
 
 #list span.selected {
-  background-color: lightblue;
+  background-color: #ed6495;
+}
+
+#array {
+  text-decoration: underline #95ed64;
 }

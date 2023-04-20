@@ -110,7 +110,7 @@ document.querySelector("form").addEventListener("submit", function (event) {
     outputText += definition[i] + "<br>";
   }
 
-  document.getElementById("output").innerHTML = outputText;
+  document.getElementById("output").innerHTML = "<h1>" + outputText + "</h1>";
   document.getElementById("array").innerHTML = "[" + definition + "]";
   document.getElementById("words").value = "";
 
