@@ -116,7 +116,15 @@ document.querySelector("form").addEventListener("submit", function (event) {
 
   if (definition.includes("murmuration")) {
     document.getElementById("image").innerHTML =
-      "<img src='images/5196832414_d7db72206b_o.jpg'>";
+      "<img src='images/5196832414_d7db72206b_o.jpg'>" +
+      "<p class='attribution'>" +
+      "<a target='_blank' rel='noopener noreferrer' href='https://www.flickr.com/photos/35044553@N02/5196832414'>" +
+      "A murmuration of starlings (4)" +
+      "</a>" +
+      " by " +
+      "<a target='_blank' rel='noopener noreferrer' href='https://www.flickr.com/photos/35044553@N02'>" +
+      "ad551" +
+      "</a></p>";
   } else {
     document.getElementById("image").innerHTML = "";
   }
